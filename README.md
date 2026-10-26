@@ -2,7 +2,7 @@
 
 My LeetCode solutions, synced automatically to this repo with GitHub Actions.
 
-[![Sync LeetCode](https://github.com/<github-username>/leetcode-solutions/actions/workflows/leetcode-sync.yml/badge.svg)](https://github.com/<github-username>/leetcode-solutions/actions/workflows/leetcode-sync.yml)
+[![Sync LeetCode](https://github.com/anasuss/leetcode-solutions/actions/workflows/leetcode-sync.yml/badge.svg)](https://github.com/anasuss/leetcode-solutions/actions/workflows/leetcode-sync.yml)
 
 ## Profile
 
