@@ -40,4 +40,4 @@ The workflow uses [joshcai/leetcode-sync](https://github.com/joshcai/leetcode-sy
 
 ## Languages
 
-<Python / Java / SQL / ...>
+<Python / SQL / ...>
