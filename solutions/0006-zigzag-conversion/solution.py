@@ -1,22 +1,27 @@
-class Solution(object):
-    def convert(self, s, numRows):
-        out=[""]*numRows
-        res=""
-        index=0
-        k=1
-        out[0]+=s[0]
+class Solution:
+    def convert(self, s: str, numRows: int) -> str:
+        c=0
+        down=True
+        zigzag=[""]*numRows
         if numRows==1:
             return s
-        while k<len(s):
-            if index==0 :
-                i=1           
-            if index==numRows-1: 
-                i=-1 
-            index+=i    
-            out[index]+=s[k]
+        for l in s:
+            
+            if down==True:
+                zigzag[c]+=l
+                
+            elif down==False:
+                zigzag[numRows-c-1]+=l
+            c=c+1    
+            
+            if c==numRows and down==True:
+                c=1
+                down=False
+            elif c==numRows and down==False:
+                c=1
+                down=True
+            
+        return ''.join(zigzag)
+        
 
-            k+=1
-        for j in range(numRows):
-            res+=out[j]
 
-        return res
